@@ -1,15 +1,17 @@
-import { Editor, Plugin } from '@ckeditor/ckeditor5-core';
-import { DowncastDispatcher, DowncastWriter, MatcherPattern, UpcastDispatcher } from '@ckeditor/ckeditor5-engine';
-import ContainerElement from '@ckeditor/ckeditor5-engine/src/view/containerelement';
+/**
+ * @license Copyright (c) 2003-2023, CKSource Holding sp. z o.o. All rights reserved.
+ * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ */
+import { Plugin } from 'ckeditor5/src/core';
 export default class CrewConnectVideoEditing extends Plugin {
     init(): void;
-    _setupConversion(): void;
-    createVideoViewElement(writer: DowncastWriter): ContainerElement;
-    downcastVideoAttribute(videoType: string, attributeKey: string): (dispatcher: DowncastDispatcher) => void;
-    getVideoViewElementMatcher(editor: Editor, matchVideoType: string): MatcherPattern;
-    isBlockVideoView(element: any): any;
-    upcastVideoFigure(): (dispatcher: UpcastDispatcher) => void;
-    toVideoWidget(viewElement: ContainerElement, writer: DowncastWriter): import("@ckeditor/ckeditor5-engine").ViewElement;
-    findViewVideoElement(figureView: any): any;
-    isInlineVideoView(element: any): any;
+    private _setupConversion;
+    private createVideoViewElement;
+    private downcastVideoAttribute;
+    private getVideoViewElementMatcher;
+    private isBlockVideoView;
+    private upcastVideoFigure;
+    private toVideoWidget;
+    private findViewVideoElement;
+    private isInlineVideoView;
 }
