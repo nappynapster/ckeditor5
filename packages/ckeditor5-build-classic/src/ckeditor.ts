@@ -25,6 +25,7 @@ import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
 import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
+import CrewConnectVideo from '../../crew-connect-video/crew-connect-video';
 
 export default class ClassicEditor extends ClassicEditorBase {
 	public static override builtinPlugins = [
@@ -53,7 +54,8 @@ export default class ClassicEditor extends ClassicEditorBase {
 		PictureEditing,
 		Table,
 		TableToolbar,
-		TextTransformation
+		TextTransformation,
+		CrewConnectVideo
 	];
 
 	public static override defaultConfig = {
@@ -63,7 +65,8 @@ export default class ClassicEditor extends ClassicEditorBase {
 				'|', 'heading',
 				'|', 'bold', 'italic',
 				'|', 'link', 'uploadImage', 'insertTable', 'blockQuote', 'mediaEmbed',
-				'|', 'bulletedList', 'numberedList', 'outdent', 'indent'
+				'|', 'bulletedList', 'numberedList', 'outdent', 'indent',
+				'|', 'crewConnectVideo'
 			]
 		},
 		image: {
@@ -83,7 +86,6 @@ export default class ClassicEditor extends ClassicEditorBase {
 				'mergeTableCells'
 			]
 		},
-		// This value must be kept in sync with the language defined in webpack.config.js.
-		language: 'en'
+		language: 'de'
 	};
 }
