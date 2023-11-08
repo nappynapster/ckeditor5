@@ -86,6 +86,9 @@ export default class ClassicEditor extends ClassicEditorBase {
 				'mergeTableCells'
 			]
 		},
+		mediaEmbed: {
+			previewsInData: true
+		},
 		language: 'de'
 	};
 }

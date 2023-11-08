@@ -35,6 +35,9 @@ export default class ClassicEditor extends ClassicEditorBase {
         table: {
             contentToolbar: string[];
         };
+        mediaEmbed: {
+            previewsInData: boolean;
+        };
         language: string;
     };
 }
