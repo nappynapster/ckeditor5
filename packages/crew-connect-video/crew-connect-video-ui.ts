@@ -16,7 +16,7 @@ export default class CrewConnectVideoUI extends Plugin {
 		editor.ui.componentFactory.add( 'crewConnectVideo', () => {
 			const button = new ButtonView();
 
-			button.label = 'Video Upload';
+			button.label = 'Dateimanager';
 			button.tooltip = true;
 			button.withText = true;
 
