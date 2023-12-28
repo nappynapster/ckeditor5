@@ -26,6 +26,7 @@ import { Table, TableToolbar } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 import CrewConnectVideo from '../../crew-connect-video/crew-connect-video';
+import { Base64UploadAdapter } from '@ckeditor/ckeditor5-upload';
 
 export default class ClassicEditor extends ClassicEditorBase {
 	public static override builtinPlugins = [
@@ -55,7 +56,8 @@ export default class ClassicEditor extends ClassicEditorBase {
 		Table,
 		TableToolbar,
 		TextTransformation,
-		CrewConnectVideo
+		CrewConnectVideo,
+		Base64UploadAdapter
 	];
 
 	public static override defaultConfig = {
